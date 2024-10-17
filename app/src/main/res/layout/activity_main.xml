@@ -6,5 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.bogobici.LogIn">
+
+    </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
