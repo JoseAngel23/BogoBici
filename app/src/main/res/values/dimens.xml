@@ -2,4 +2,6 @@
 <resources>
     <dimen name="text_width">350sp</dimen>
     <dimen name="text_margin">30sp</dimen>
+    <dimen name="heigh_bton">55sp</dimen>
+    <dimen name="text_log_up_margin">15sp</dimen>
 </resources>

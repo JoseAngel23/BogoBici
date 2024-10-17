@@ -7,4 +7,12 @@
     <string name="registrarse">Resgistrarse</string>
     <string name="facebook">Continuar con Facebook</string>
     <string name="google">Continuar con Google</string>
+    <string name="create_new_account">Crea una nueva de BogoBici</string>
+    <string name="registrarse_bton">Registrate</string>
+    <string name="name">Nombre</string>
+    <string name="correo">Correo eléctronico</string>
+    <string name="number_phone">Número de telefono</string>
+    <string name="send_notification">Enviar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

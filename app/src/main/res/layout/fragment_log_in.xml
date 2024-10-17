@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="250sp"
+        android:layout_gravity="center"
         android:paddingLeft="110sp"
         android:paddingTop="20sp"
-        android:layout_gravity="center"
         android:paddingRight="110sp"
         app:srcCompat="@drawable/bogobici_logo" />
 
     <EditText
         android:id="@+id/user_text"
         android:layout_width="@dimen/text_width"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:layout_gravity="center"
         android:ems="10"
         android:fontFamily="@font/inter"
@@ -30,7 +32,7 @@ android:orientation="vertical">
     <EditText
         android:id="@+id/password_text"
         android:layout_width="@dimen/text_width"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:layout_gravity="center"
         android:ems="10"
         android:fontFamily="@font/inter_medium"
@@ -44,11 +46,12 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20sp"
+        android:height="@dimen/heigh_bton"
         android:backgroundTint="@color/green_bogo_bici"
         android:fontFamily="@font/inter_bold"
         android:text="@string/iniciar_sesion"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/forget_password_bton"
@@ -67,6 +70,7 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="100sp"
+        android:height="@dimen/heigh_bton"
         android:backgroundTint="@color/white"
         android:text="@string/registrarse"
         android:textColor="@color/black"
@@ -77,6 +81,7 @@ android:orientation="vertical">
         android:layout_width="320sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:height="@dimen/heigh_bton"
         android:backgroundTint="@color/white"
         android:text="@string/facebook"
         android:textColor="@color/black"
@@ -87,6 +92,7 @@ android:orientation="vertical">
         android:layout_width="320sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:height="@dimen/heigh_bton"
         android:backgroundTint="@color/white"
         android:text="@string/google"
         android:textColor="@color/black"
