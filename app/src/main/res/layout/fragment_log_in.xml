@@ -22,8 +22,10 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
+        android:fontFamily="@font/inter"
         android:hint="@string/user_email"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/password_text"
@@ -31,32 +33,62 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
+        android:fontFamily="@font/inter_medium"
         android:hint="@string/password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/log_in_button"
-        android:layout_width="300sp"
+        android:layout_width="320sp"
         android:layout_height="wrap_content"
-        android:text="Button"
         android:layout_gravity="center"
-        android:textAlignment="center" />
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/green_bogo_bici"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/iniciar_sesion"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:id="@+id/forget_password_bton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/olvido_contrasenia"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
+        android:id="@+id/registrarse_bton"
+        android:layout_width="320sp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/white"
+        android:text="@string/registrarse"
+        android:textColor="@color/black"
+        app:strokeWidth="1sp" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
+        android:id="@+id/facebook_bton"
+        android:layout_width="320sp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:text="@string/facebook"
+        android:textColor="@color/black"
+        app:strokeWidth="1sp" />
+
+    <Button
+        android:id="@+id/google_bton"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:text="@string/google"
+        android:textColor="@color/black"
+        app:strokeWidth="1sp" />
 </LinearLayout>

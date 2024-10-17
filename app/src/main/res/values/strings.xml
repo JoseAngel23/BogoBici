@@ -2,4 +2,9 @@
     <string name="app_name">BogoBici</string>
     <string name="user_email">Usuario o correo</string>
     <string name="password">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="olvido_contrasenia">¿Olvidaste la contraseña?</string>
+    <string name="registrarse">Resgistrarse</string>
+    <string name="facebook">Continuar con Facebook</string>
+    <string name="google">Continuar con Google</string>
 </resources>
