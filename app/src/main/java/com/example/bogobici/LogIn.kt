@@ -25,7 +25,7 @@ class LogIn : Fragment() {
 
         logUpButton.setOnClickListener {
             requireActivity().supportFragmentManager.commit {
-                replace(R.id.nav_host_fragment, LogUp())
+                replace(R.id.nav_host_fragment, SignUp())
                 addToBackStack(null)
             }
         }
