@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "569242945293",
+    "project_id": "bogobici-ad378",
+    "storage_bucket": "bogobici-ad378.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569242945293:android:995019533ed9c5438b9244",
+        "android_client_info": {
+          "package_name": "com.example.bogobici"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBODgitWhwg1eJ5e-iznvyYzz_4rP1gyPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
