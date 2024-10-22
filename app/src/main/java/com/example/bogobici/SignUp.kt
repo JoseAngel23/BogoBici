@@ -12,7 +12,7 @@ class SignUp : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_log_up, container, false)
+        return inflater.inflate(R.layout.fragment_sign_up, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
