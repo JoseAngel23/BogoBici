@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <Button
         android:id="@+id/register_bton"
         android:layout_width="269dp"
         android:layout_height="54dp"
-        android:layout_marginTop="488dp"
+        android:layout_marginTop="580dp"
         android:backgroundTint="@color/green_bogo_bici"
         android:text="Registrarse"
         android:textSize="16sp"
@@ -19,7 +20,7 @@
 
     <EditText
         android:id="@+id/email_text"
-        android:layout_width="291dp"
+        android:layout_width="@dimen/text_width"
         android:layout_height="48dp"
         android:layout_marginTop="240dp"
         android:ems="10"
@@ -31,31 +32,20 @@
 
     <EditText
         android:id="@+id/phone_text"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/text_width"
         android:layout_height="48dp"
-        android:layout_marginTop="380dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="452dp"
         android:ems="10"
         android:hint="Telefono"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="380dp"
-        android:ems="10"
-        android:hint="+57"
-        android:inputType="number"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="291dp"
+        android:layout_width="@dimen/text_width"
         android:layout_height="48dp"
         android:layout_marginTop="308dp"
         android:ems="10"
@@ -63,7 +53,22 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true"/>
+
+    <EditText
+        android:id="@+id/RetypePassword"
+        android:layout_width="@dimen/text_width"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Repite la contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/phone_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:passwordToggleEnabled="true"/>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -79,25 +84,39 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Crear una nueva cuenta \nde BogoBici"
+        android:layout_marginTop="44dp"
+        android:text="@string/create_account"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/back_button_sign_up"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
         android:background="#00FFFFFF"
+        android:tint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <Button
+        android:id="@+id/back_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="¿Ya tienes cuenta? Ingresa acá"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_bton"
+        app:layout_constraintVertical_bias="0.673" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

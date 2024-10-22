@@ -36,6 +36,8 @@ class LogIn : Fragment() {
                 addToBackStack(null)
             }
         }
+
+        val loginButton = view.findViewById<Button>(R.id.back_login_button)
     }
 }
 
