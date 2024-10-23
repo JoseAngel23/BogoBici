@@ -41,7 +41,7 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/c"
+        android:id="@+id/log_in_bton"
         android:layout_width="320sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

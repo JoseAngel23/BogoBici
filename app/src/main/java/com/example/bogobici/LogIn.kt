@@ -7,8 +7,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
+import com.google.firebase.auth.FirebaseAuth
 
 class LogIn : Fragment() {
+
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,7 +40,8 @@ class LogIn : Fragment() {
             }
         }
 
-        val loginButton = view.findViewById<Button>(R.id.back_login_button)
+        val logInButton = view.findViewById<Button>(R.id.log_in_bton)
+
     }
 }
 

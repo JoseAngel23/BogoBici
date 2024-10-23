@@ -16,4 +16,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="create_account">Registro</string>
+    <string name="name_photo">Finaliza tu registro</string>
+    <string name="back_bton">Botón para regresar de pestaña</string>
+    <string name="upload_bton">Botón para subir una foto o imagen</string>
+    <string name="name_upload">Escribe tu nombre</string>
+    <string name="adventure">Tu próxima aventura empieza aquí</string>
+    <string name="before_sports">Planifica mejor tus rutas, sientete libre de escoger la ruta que mejor se adapte a ti, y ten en cuenta que la seguridad es lo primordial para nosotros.</string>
 </resources>
