@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.commit {
             setReorderingAllowed(true)
-            add(R.id.nav_host_fragment, LogIn())
+            add(R.id.nav_host_fragment, Comments())
         }
     }
 }
