@@ -18,9 +18,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.commit {
-            setReorderingAllowed(true)
-            add(R.id.nav_host_fragment, LogIn())
-        }
+        
     }
 }
