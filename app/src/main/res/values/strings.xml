@@ -22,4 +22,6 @@
     <string name="name_upload">Escribe tu nombre</string>
     <string name="adventure">Tu próxima aventura empieza aquí</string>
     <string name="before_sports">Planifica mejor tus rutas, sientete libre de escoger la ruta que mejor se adapte a ti, y ten en cuenta que la seguridad es lo primordial para nosotros.</string>
+    <string name="choose_sport">¿Cúales deportes practicas?</string>
+    <string name="choose_sport_text">Cuentanos que deportes te gustan para recibir recomendaciones de rutas.</string>
 </resources>

@@ -3,11 +3,14 @@
 
     <item android:title="Inicio"
         android:id="@+id/home"
-        android:icon="@drawable/baseline_home_24"/>
+        android:icon="@drawable/home_26dp_5f6368_fill0_wght400_grad0_opsz24"
+        android:iconTint="@color/white"/>
     <item android:title="Rutas"
         android:id="@+id/routes"
-        android:icon="@drawable/outline_call_merge_24"/>
+        android:icon="@drawable/map_26dp_ffffff_fill0_wght400_grad0_opsz24"
+        android:iconTint="@color/white"/>
     <item android:title="Perfil"
         android:id="@+id/profile"
-        android:icon="@drawable/twotone_app_settings_alt_24"/>
+        android:icon="@drawable/person_26dp_ffffff_fill0_wght400_grad0_opsz24"
+        android:iconTint="@color/white"/>
 </menu>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RoutesScreen">
 
     <ScrollView
@@ -13,6 +14,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/imageRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
+            </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 </FrameLayout>
