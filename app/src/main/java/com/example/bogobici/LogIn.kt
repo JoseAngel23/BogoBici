@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
 class LogIn : Fragment() {
@@ -41,6 +42,13 @@ class LogIn : Fragment() {
         }
 
         val logInButton = view.findViewById<Button>(R.id.log_in_bton)
+
+        logInButton.setOnClickListener {
+            requireActivity().supportFragmentManager.commit {
+                replace(R.id.nav_host_fragment, BottomNavigationViewFragment())
+                addToBackStack(null)
+            }
+        }
 
     }
 }
