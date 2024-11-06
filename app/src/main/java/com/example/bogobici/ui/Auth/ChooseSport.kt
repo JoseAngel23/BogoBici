@@ -1,15 +1,13 @@
-package com.example.bogobici
+package com.example.bogobici.ui.Auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.bogobici.R
 
-class Upload_photo : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class ChooseSport : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +17,7 @@ class Upload_photo : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_upload_photo, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_choose_sport, container, false)
     }
 }

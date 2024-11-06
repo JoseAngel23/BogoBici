@@ -1,10 +1,11 @@
-package com.example.bogobici
+package com.example.bogobici.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.bogobici.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BottomNavigationViewFragment : Fragment() {

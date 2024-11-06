@@ -1,13 +1,13 @@
-package com.example.bogobici
+package com.example.bogobici.ui.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.bogobici.R
 
-class before_sports : Fragment() {
-
+class HomeScreen : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +17,7 @@ class before_sports : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_before_sports, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_home_screen, container, false)
     }
-
 }

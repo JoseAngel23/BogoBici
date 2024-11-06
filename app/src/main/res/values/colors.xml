@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green_bogo_bici">#107900</color>
+    <color name="GreyCard">#F5F1F1</color>
+    <color name="Transparent">#00FFFFFF</color>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeScreen">
+    tools:context=".ui.profile.HomeScreen">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,13 +36,13 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="64dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="35dp"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/notification_icon"
             android:src="@drawable/notifications_25dp_000000_fill0_wght400_grad0_opsz24"
             app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/notification_icon"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/imageButton4"
@@ -50,14 +50,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="35dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="24dp"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/logout_icon"
             android:src="@drawable/logout_25dp_000000_fill0_wght400_grad0_opsz24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/logout_icon"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/inicio_text"

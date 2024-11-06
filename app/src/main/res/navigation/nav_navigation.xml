@@ -6,33 +6,38 @@
     app:startDestination="@id/welcome">
     <fragment
         android:id="@+id/welcome"
-        android:name="com.example.bogobici.Welcome"
+        android:name="com.example.bogobici.ui.Auth.Welcome"
         android:label="Welcome" >
         <action
             android:id="@+id/action_welcome_to_logIn"
-            app:destination="@id/logIn" />
+            app:destination="@id/logIn"
+            app:enterAnim="@android:anim/fade_in" />
     </fragment>
     <fragment
         android:id="@+id/logIn"
-        android:name="com.example.bogobici.LogIn"
+        android:name="com.example.bogobici.ui.Auth.LogIn"
         android:label="LogIn" >
         <action
             android:id="@+id/action_logIn_to_forgetPassword"
             app:destination="@id/forgetPassword" />
         <action
             android:id="@+id/action_logIn_to_signUp"
-            app:destination="@id/signUp" />
+            app:destination="@id/signUp"
+            app:enterAnim="@anim/enter_rigth_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_rigth"
+            app:popExitAnim="@anim/exit_rigth" />
         <action
             android:id="@+id/action_logIn_to_bottomNavigationViewFragment"
             app:destination="@id/bottomNavigationViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/forgetPassword"
-        android:name="com.example.bogobici.ForgetPassword"
+        android:name="com.example.bogobici.ui.Auth.ForgetPassword"
         android:label="ForgetPassword" />
     <fragment
         android:id="@+id/signUp"
-        android:name="com.example.bogobici.SignUp"
+        android:name="com.example.bogobici.ui.Auth.SignUp"
         android:label="SignUp" >
         <action
             android:id="@+id/action_signUp_to_upload_photo"
@@ -40,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/before_sports"
-        android:name="com.example.bogobici.before_sports"
+        android:name="com.example.bogobici.ui.Auth.before_sports"
         android:label="fragment_before_sports"
         tools:layout="@layout/fragment_before_sports" >
         <action
@@ -49,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/upload_photo"
-        android:name="com.example.bogobici.Upload_photo"
+        android:name="com.example.bogobici.ui.Auth.Upload_photo"
         android:label="fragment_upload_photo"
         tools:layout="@layout/fragment_upload_photo" >
         <action
@@ -58,12 +63,12 @@
     </fragment>
     <fragment
         android:id="@+id/chooseSport"
-        android:name="com.example.bogobici.ChooseSport"
+        android:name="com.example.bogobici.ui.Auth.ChooseSport"
         android:label="fragment_choose_sport"
         tools:layout="@layout/fragment_choose_sport" />
     <fragment
         android:id="@+id/bottomNavigationViewFragment"
-        android:name="com.example.bogobici.BottomNavigationViewFragment"
+        android:name="com.example.bogobici.ui.profile.BottomNavigationViewFragment"
         android:label="BottomNavigationViewFragment" >
         <action
             android:id="@+id/action_bottomNavigationViewFragment_to_homeScreen"
@@ -77,17 +82,17 @@
     </fragment>
     <fragment
         android:id="@+id/homeScreen"
-        android:name="com.example.bogobici.HomeScreen"
+        android:name="com.example.bogobici.ui.profile.HomeScreen"
         android:label="fragment_home_screen"
         tools:layout="@layout/fragment_home_screen" />
     <fragment
         android:id="@+id/routesScreen"
-        android:name="com.example.bogobici.RoutesScreen"
+        android:name="com.example.bogobici.ui.profile.RoutesScreen"
         android:label="fragment_routes_screen"
         tools:layout="@layout/fragment_routes_screen" />
     <fragment
         android:id="@+id/profile2"
-        android:name="com.example.bogobici.Profile"
+        android:name="com.example.bogobici.ui.profile.Profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

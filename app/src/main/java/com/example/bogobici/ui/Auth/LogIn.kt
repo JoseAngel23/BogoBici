@@ -1,4 +1,4 @@
-package com.example.bogobici
+package com.example.bogobici.ui.Auth
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.navigation.fragment.findNavController
+import com.example.bogobici.R
+import com.example.bogobici.ui.profile.BottomNavigationViewFragment
 import com.google.firebase.auth.FirebaseAuth
 
 class LogIn : Fragment() {
@@ -29,8 +31,7 @@ class LogIn : Fragment() {
 
         logUpButton.setOnClickListener {
             requireActivity().supportFragmentManager.commit {
-                replace(R.id.nav_host_fragment, SignUp())
-                addToBackStack(null)
+                findNavController().navigate(R.id.action_logIn_to_signUp)
             }
         }
 
