@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import androidx.fragment.app.commit
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.auth.FirebaseAuth
 
 class HomeScreen : Fragment() {
 
@@ -27,7 +28,17 @@ class HomeScreen : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val logout = view.findViewById<ImageButton>(R.id.imageButton4)
+        val correoPantalla = view.findViewById<TextView>(R.id.correo_pantalla)
 
+        // Obtén el correo del usuario actual y muéstralo en el TextView
+        val currentUser = FirebaseAuth.getInstance().currentUser
+        correoPantalla.text = currentUser?.email ?: "Correo no disponible"
 
+        // Configura el botón de logout si es necesario
+        logout.setOnClickListener {
+            // Lógica para cerrar sesión o redireccionar
+            FirebaseAuth.getInstance().signOut()
+            findNavController().navigate(R.id.action_homeScreen_to_logIn)
+        }
     }
 }

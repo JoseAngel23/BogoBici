@@ -1,5 +1,6 @@
 [versions]
 agp = "8.6.0"
+firebaseStorage = "20.0.1"
 fragmentKtx = "1.8.4"
 glide = "4.16.0"
 hiltAndroid = "2.48"
@@ -22,10 +23,12 @@ firebaseFirestore = "25.1.1"
 lifecycleLivedataKtx = "2.8.6"
 lifecycleViewmodelKtx = "2.8.6"
 media3CommonKtx = "1.4.1"
+firebaseStorageKtx = "21.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+firebase-storage = { module = "con.google.firebase:firebase-storage", version.ref = "firebaseStorage" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -41,6 +44,7 @@ firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-media3-common-ktx = { group = "androidx.media3", name = "media3-common-ktx", version.ref = "media3CommonKtx" }
+firebase-storage-ktx = { group = "com.google.firebase", name = "firebase-storage-ktx", version.ref = "firebaseStorageKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

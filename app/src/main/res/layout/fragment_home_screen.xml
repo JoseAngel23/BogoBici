@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/correo_pantalla"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -73,13 +73,15 @@
 
                 <ImageView
                     android:id="@+id/imageView9"
+                    android:src="@drawable/man_8046025_1920"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/backgrounds/scenic" />
+
+                    />
 
                 <TextView
                     android:id="@+id/recomendation_txt"
