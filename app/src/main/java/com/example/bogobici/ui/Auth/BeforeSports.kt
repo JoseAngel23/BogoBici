@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import com.example.bogobici.R
 
 class before_sports : Fragment() {
@@ -21,4 +23,13 @@ class before_sports : Fragment() {
         return inflater.inflate(R.layout.fragment_before_sports, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val button = view.findViewById<Button>(R.id.start__bton)
+
+        button.setOnClickListener {
+            findNavController().navigate(R.id.action_before_sports_to_chooseSport)
+        }
+    }
 }

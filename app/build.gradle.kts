@@ -53,7 +53,15 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.firebase.auth)
     implementation(libs.play.services.maps)
+    implementation(libs.androidx.espresso.core)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.dagger)
+    implementation(libs.glide)
+
+    implementation(libs.hilt.android)
+    implementation(libs.hilt.navigation.fragment)
+
 }

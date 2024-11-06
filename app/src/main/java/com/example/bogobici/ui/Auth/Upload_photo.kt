@@ -13,9 +13,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.example.bogobici.R
 
 class Upload_photo : Fragment() {
@@ -38,9 +40,14 @@ class Upload_photo : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val imageView = view.findViewById<ImageView>(R.id.photoSelect)
+        val nextButton = view.findViewById<Button>(R.id.upload_bton)
 
         imageView.setOnClickListener {
             pickPhoto(it)
+        }
+
+        nextButton.setOnClickListener {
+            findNavController().navigate(R.id.action_upload_photo_to_before_sports)
         }
 
     }

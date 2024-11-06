@@ -19,7 +19,11 @@
         android:label="LogIn" >
         <action
             android:id="@+id/action_logIn_to_forgetPassword"
-            app:destination="@id/forgetPassword" />
+            app:destination="@id/forgetPassword"
+            app:enterAnim="@anim/enter_rigth_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_rigth"
+            app:popExitAnim="@anim/exit_rigth"/>
         <action
             android:id="@+id/action_logIn_to_signUp"
             app:destination="@id/signUp"
@@ -41,7 +45,11 @@
         android:label="SignUp" >
         <action
             android:id="@+id/action_signUp_to_upload_photo"
-            app:destination="@id/upload_photo" />
+            app:destination="@id/upload_photo"
+            app:enterAnim="@anim/enter_rigth_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_rigth"
+            app:popExitAnim="@anim/exit_rigth"/>
     </fragment>
     <fragment
         android:id="@+id/before_sports"
@@ -65,7 +73,11 @@
         android:id="@+id/chooseSport"
         android:name="com.example.bogobici.ui.Auth.ChooseSport"
         android:label="fragment_choose_sport"
-        tools:layout="@layout/fragment_choose_sport" />
+        tools:layout="@layout/fragment_choose_sport" >
+        <action
+            android:id="@+id/action_chooseSport_to_bottomNavigationViewFragment"
+            app:destination="@id/bottomNavigationViewFragment" />
+    </fragment>
     <fragment
         android:id="@+id/bottomNavigationViewFragment"
         android:name="com.example.bogobici.ui.profile.BottomNavigationViewFragment"
@@ -84,7 +96,11 @@
         android:id="@+id/homeScreen"
         android:name="com.example.bogobici.ui.profile.HomeScreen"
         android:label="fragment_home_screen"
-        tools:layout="@layout/fragment_home_screen" />
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_logIn"
+            app:destination="@id/logIn" />
+    </fragment>
     <fragment
         android:id="@+id/routesScreen"
         android:name="com.example.bogobici.ui.profile.RoutesScreen"

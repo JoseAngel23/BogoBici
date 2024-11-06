@@ -73,15 +73,16 @@
             app:layout_constraintTop_toBottomOf="@+id/name_upload"
             app:layout_constraintVertical_bias="0.162" />
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/photoSelect"
-            android:layout_width="179dp"
-            android:layout_height="166dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             android:src="@drawable/face_25dp_000000_fill0_wght400_grad0_opsz24"
             app:layout_constraintBottom_toTopOf="@+id/name_upload"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
