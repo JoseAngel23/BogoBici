@@ -1,4 +1,4 @@
-package com.example.bogobici.ui.Auth
+package com.example.bogobici.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.navigation.fragment.findNavController
 import com.example.bogobici.R
-import com.example.bogobici.ui.profile.BottomNavigationViewFragment
 import com.google.firebase.auth.FirebaseAuth
 
 class LogIn : Fragment() {

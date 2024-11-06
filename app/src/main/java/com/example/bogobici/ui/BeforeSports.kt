@@ -1,4 +1,4 @@
-package com.example.bogobici.ui.Auth
+package com.example.bogobici.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

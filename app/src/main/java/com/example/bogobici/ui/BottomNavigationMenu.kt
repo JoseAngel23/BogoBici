@@ -1,4 +1,4 @@
-package com.example.bogobici.ui.profile
+package com.example.bogobici.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

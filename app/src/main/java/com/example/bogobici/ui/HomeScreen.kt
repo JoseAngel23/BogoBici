@@ -1,4 +1,4 @@
-package com.example.bogobici.ui.profile
+package com.example.bogobici.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.navigation.fragment.findNavController
 import com.example.bogobici.R
-import kotlin.math.log
 
 class HomeScreen : Fragment() {
 

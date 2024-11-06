@@ -1,4 +1,4 @@
-package com.example.bogobici.ui.Auth
+package com.example.bogobici.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,11 +10,8 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.findViewTreeViewModelStoreOwner
 import androidx.navigation.fragment.findNavController
 import com.example.bogobici.R
-import com.example.bogobici.databinding.FragmentSignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 

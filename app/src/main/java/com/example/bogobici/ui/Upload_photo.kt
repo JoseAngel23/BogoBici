@@ -1,4 +1,4 @@
-package com.example.bogobici.ui.Auth
+package com.example.bogobici.ui
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
