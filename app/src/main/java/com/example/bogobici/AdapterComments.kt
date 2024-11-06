@@ -1,29 +1,56 @@
 package com.example.bogobici
 
+import android.annotation.SuppressLint
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.RatingBar
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bogobici.databinding.CommentsItemBinding
 import android.widget.TextView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CircleCrop
 
-class AdapterComments(val comments: List<String>) : RecyclerView.Adapter<AdapterComments.ViewHolder>() {
+class AdapterComments(private var comments: List<CommentsData>) : RecyclerView.Adapter<AdapterComments.ViewHolder>() {
 
-    // Define el ViewHolder
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val textView: TextView = itemView.findViewById(android.R.id.text1) // Usa un TextView simple
+        val itemImg: ImageView
+        var itemName: TextView
+        var itemDescription: TextView
+        var itemValoration: RatingBar
+        var itemDate: TextView
+
+        init {
+            itemImg = itemView.findViewById(R.id.imageView3)
+            itemName = itemView.findViewById(R.id.textView5)
+            itemDescription = itemView.findViewById(R.id.textView6)
+            itemValoration = itemView.findViewById(R.id.ratingBar2)
+            itemDate = itemView.findViewById(R.id.textView7)
+        }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(android.R.layout.simple_list_item_1, parent, false) // Usando un layout simple
+    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
+        val view = LayoutInflater.from(viewGroup.context)
+            .inflate(R.layout.comments_item, viewGroup, false) // Usando un layout simple
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.textView.text = comments[position].toString() // Enlaza los datos
+        val comment = comments[position]
+        holder.itemName.text = comment.name
+        Glide.with(holder.itemImg.context).load(comment.urlImage).transform(CircleCrop()).into(holder.itemImg)
+        holder.itemValoration.rating = comment.valoration.toFloat()
+        holder.itemDescription.text = comment.description
+        holder.itemDate.text = comment.date
     }
 
-    override fun getItemCount() = comments.size // Devuelve el tamaño de la lista
+    override fun getItemCount() = comments.size
+
+    fun setComments(newComments: List<CommentsData>) {
+        comments = newComments
+        notifyDataSetChanged()
+    }
 
 }

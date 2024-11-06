@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_navigation"
-    app:startDestination="@id/logIn">
+    app:startDestination="@id/comments">
 
     <fragment
         android:id="@+id/logIn"
         android:name="com.example.bogobici.LogIn"
-        android:label="LogIn" />
+        android:label="LogIn"
+        tools:layout="@layout/fragment_log_in"/>
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.example.bogobici.EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfile_to_notification"
+            app:destination="@id/notification" />
+    </fragment>
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.bogobici.Notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notification_to_editProfile"
+            app:destination="@id/editProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/comments"
+        android:name="com.example.bogobici.Comments"
+        android:label="Comments" />
+
 </navigation>
