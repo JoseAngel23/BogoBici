@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 
-class AdapterCarousel(private var imagesCarousel: List<CarouselData>) : RecyclerView.Adapter<AdapterCarousel.ViewHolder>() {
+class AdapterCarousel(private var imagesCarousel: List<String>) : RecyclerView.Adapter<AdapterCarousel.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val itemImg: ImageView
@@ -26,14 +26,9 @@ class AdapterCarousel(private var imagesCarousel: List<CarouselData>) : Recycler
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val images = imagesCarousel[position]
-        Glide.with(holder.itemImg.context).load(images.images).into(holder.itemImg)
+        Glide.with(holder.itemImg.context).load(images).into(holder.itemImg)
     }
 
     override fun getItemCount() = imagesCarousel.size
-
-    fun setImages(newImages: List<CarouselData>) {
-        imagesCarousel = newImages
-        notifyDataSetChanged()
-    }
 
 }
