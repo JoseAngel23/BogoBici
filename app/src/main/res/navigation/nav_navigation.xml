@@ -100,15 +100,40 @@
         <action
             android:id="@+id/action_homeScreen_to_logIn"
             app:destination="@id/logIn" />
+        <action
+            android:id="@+id/action_homeScreen_to_notification"
+            app:destination="@id/notification" />
     </fragment>
     <fragment
         android:id="@+id/routesScreen"
         android:name="com.example.bogobici.RoutesScreen"
         android:label="fragment_routes_screen"
-        tools:layout="@layout/fragment_routes_screen" />
+        tools:layout="@layout/fragment_routes_screen" >
+        <action
+            android:id="@+id/action_routesScreen_to_comments"
+            app:destination="@id/comments" />
+    </fragment>
     <fragment
         android:id="@+id/profile2"
         android:name="com.example.bogobici.Profile"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile2_to_editProfile"
+            app:destination="@id/editProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/comments"
+        android:name="com.example.bogobici.Comments"
+        android:label="Comments" />
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.example.bogobici.EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.bogobici.Notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
 </navigation>

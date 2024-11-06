@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.fragment.app.commit
 import androidx.navigation.fragment.findNavController
 
 class HomeScreen : Fragment() {
@@ -27,8 +28,6 @@ class HomeScreen : Fragment() {
 
         val logout = view.findViewById<ImageButton>(R.id.imageButton4)
 
-        logout.setOnClickListener() {
-            findNavController().navigate(R.id.action_homeScreen_to_logIn)
-        }
+
     }
 }
