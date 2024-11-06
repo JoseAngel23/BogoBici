@@ -1,11 +1,10 @@
-package com.example.bogobici.ui
+package com.example.bogobici
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.bogobici.R
 
 class Profile : Fragment() {
 

@@ -1,16 +1,14 @@
-package com.example.bogobici.ui
+package com.example.bogobici
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.navigation.fragment.findNavController
-import com.example.bogobici.R
 
-class before_sports : Fragment() {
-
+class HomeScreen : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,16 +18,17 @@ class before_sports : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_before_sports, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_home_screen, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val button = view.findViewById<Button>(R.id.start__bton)
+        val logout = view.findViewById<ImageButton>(R.id.imageButton4)
 
-        button.setOnClickListener {
-            findNavController().navigate(R.id.action_before_sports_to_chooseSport)
+        logout.setOnClickListener() {
+            findNavController().navigate(R.id.action_homeScreen_to_logIn)
         }
     }
 }

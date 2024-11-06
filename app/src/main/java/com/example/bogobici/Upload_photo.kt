@@ -1,4 +1,4 @@
-package com.example.bogobici.ui
+package com.example.bogobici
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
@@ -18,7 +18,6 @@ import android.widget.ImageView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
-import com.example.bogobici.R
 
 class Upload_photo : Fragment() {
 

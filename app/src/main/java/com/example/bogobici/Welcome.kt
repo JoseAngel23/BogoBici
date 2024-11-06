@@ -1,4 +1,4 @@
-package com.example.bogobici.ui
+package com.example.bogobici
 
 import android.os.Bundle
 import android.os.Handler
@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.bogobici.R
 
 class Welcome : Fragment(){
     override fun onCreateView(

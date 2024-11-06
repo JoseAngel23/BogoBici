@@ -1,9 +1,8 @@
-package com.example.bogobici.ui
+package com.example.bogobici
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
-import com.example.bogobici.R
 import com.example.bogobici.databinding.FragmentRoutesScreenBinding
 
 class RoutesScreen : Fragment(R.layout.fragment_routes_screen) {
