@@ -39,7 +39,7 @@
                     android:textSize="30sp" />
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/notificacions"
                     android:layout_width="0sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -90,7 +90,7 @@
                         android:src="@drawable/settings_26dp_000000_fill0_wght400_grad0_opsz24"
                         app:circularflow_radiusInDP="70sp"
                         app:layout_constraintEnd_toStartOf="@+id/share_bton"
-                        app:layout_constraintHorizontal_bias="0.512"
+                        app:layout_constraintHorizontal_bias="0.4"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/profile_photo" />
 
@@ -99,10 +99,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="68dp"
-                        android:layout_marginEnd="84dp"
+                        android:layout_marginEnd="72dp"
                         android:src="@drawable/share_26dp_000000_fill0_wght400_grad0_opsz24"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/profile_photo" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 

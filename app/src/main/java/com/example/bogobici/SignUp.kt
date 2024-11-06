@@ -52,14 +52,15 @@ class SignUp : Fragment() {
             if (emailText.isNotEmpty() && passwordText.isNotEmpty() && confirmPasswordText.isNotEmpty()) {
                 if (passwordText == confirmPasswordText) {
                     firebaseAuth.createUserWithEmailAndPassword(emailText, passwordText)
-                        .addOnCompleteListener {
-                            if (it.isSuccessful) {
+                        .addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
                             Toast.makeText(requireContext(), "Registro exitoso", Toast.LENGTH_SHORT).show()
                             requireActivity().supportFragmentManager.commit{
                                 findNavController().navigate(R.id.action_signUp_to_upload_photo)
                             }
                         } else {
-                            Toast.makeText(requireContext(), "Error en el registro", Toast.LENGTH_SHORT).show()
+                                val error = task.exception?.message ?: "Error en el registro"
+                                Toast.makeText(requireContext(), error, Toast.LENGTH_SHORT).show()
                         }
                     }
                 } else {

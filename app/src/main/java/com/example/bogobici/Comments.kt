@@ -48,7 +48,7 @@ class Comments : Fragment() {
         recyclerView.adapter = myAdapter
         getComments()
 
-        val btnAddComment = view.findViewById<ImageButton>(R.id.imageButton)
+        val btnAddComment = view.findViewById<ImageButton>(R.id.notifications_bton)
 
         btnAddComment.setOnClickListener {
             mostrarModalComentarioYValoracion()
