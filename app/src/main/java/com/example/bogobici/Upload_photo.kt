@@ -1,5 +1,3 @@
-package com.example.bogobici
-
 import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -18,6 +16,17 @@ import android.widget.ImageView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
+import android.app.Activity
+import android.widget.*
+import androidx.fragment.app.commit
+import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.Glide
+import com.example.bogobici.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import java.io.ByteArrayOutputStream
+import java.util.*
+
 
 class Upload_photo : Fragment() {
 

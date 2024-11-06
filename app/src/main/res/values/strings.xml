@@ -28,4 +28,5 @@
     <string name="logout_icon">logout_icon</string>
     <string name="notification_icon">notification_icon</string>
     <string name="perfil">Perfil</string>
+    <string name="photo_select">photo_select</string>
 </resources>
