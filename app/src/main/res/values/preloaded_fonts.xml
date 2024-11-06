@@ -5,6 +5,7 @@
         <item>@font/inter_black</item>
         <item>@font/inter_bold</item>
         <item>@font/inter_extrabold</item>
+        <item>@font/inter_light</item>
         <item>@font/inter_medium</item>
     </array>
 </resources>
